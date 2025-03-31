@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/khalidhasantuhin/Library/CloudStorage/OneDrive-BUET/3-1/Development/blog_app/src/app/blogs/%5BblogId%5D/not-found.jsx"],"sourcesContent":["import Link from \"next/link\";\nimport { Button } from \"@/components/ui/button\";\n\nexport default function BlogNotFound() {\n  return (\n    <div className=\"container mx-auto py-24 px-4 text-center\">\n      <h1 className=\"text-4xl font-bold mb-6\">Blog Post Not Found</h1>\n      <p className=\"text-xl text-muted-foreground mb-8\">\n        The blog post you're looking for doesn't exist or has been removed.\n      </p>\n      <Button asChild>\n        <Link href=\"/blogs\">\n          Go Back to Blogs\n        </Link>\n      </Button>\n    </div>\n  );\n} "],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;gBAAG,WAAU;0BAA0B;;;;;;0BACxC,8OAAC;gBAAE,WAAU;0BAAqC;;;;;;0BAGlD,8OAAC,kIAAA,CAAA,SAAM;gBAAC,OAAO;0BACb,cAAA,8OAAC,4JAAA,CAAA,UAAI;oBAAC,MAAK;8BAAS;;;;;;;;;;;;;;;;;AAM5B","debugId":null}}]
+}
