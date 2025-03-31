@@ -5,7 +5,7 @@ const BlogHomePage = () => {
         <div className="grid grid-cols-2 gap-4 p-4 m-4">
             <div className="container mx-auto">
                 <h1 className="text-6xl font-bold mb-10">
-                    Welcome to The Greatest Blog Show, <br />
+                    Welcome to The Greatest Blog, <br />
                     <div className="my-4">
                         <span className="text-white bg-cyan-300 px-2">TuhinBlog!!</span>
                     </div>
