@@ -7,18 +7,17 @@ import CommentsSection from "@/components/blogs/CommentsSection";
 import BlogReactionWrapper from "@/components/blogs/BlogReactionWrapper";
 
 export async function generateMetadata({ params }) {
-  const {blogId} = await params;
-  const blog = blogs.find((blog) => blog.id === blogId);
+  const blog = blogs.find((blog) => blog.id === params.blogId);
   
   if (!blog) {
     return {
-      title: "Blog Not Found",
-      description: "The requested blog post could not be found.",
+      title: "Blog Not Found | TuhinBlog",
+      description: "The blog post you're looking for couldn't be found."
     };
   }
   
   return {
-    title: blog.title,
+    title: `${blog.title} | TuhinBlog`,
     description: blog.excerpt,
   };
 }
@@ -29,9 +28,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPostPage({ params }) {
-  const {blogId} = await params;
-  const blog = blogs.find((blog) => blog.id === blogId);
+export default function BlogPostPage({ params }) {
+  const blog = blogs.find((blog) => blog.id === params.blogId);
   
   if (!blog) {
     notFound();
